@@ -1,0 +1,33 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block content
+body    
+<main>
+h1  Enter new #{ title } to database 
+form(action="/recipe/new", method="post")
+
+    label(for="title") Recipe name: 
+    input.form-control(type="text", placeholder="Enter recipe name", name="title")
+    br
+
+    label(for="type") Select food type:
+    select.form-control(name=type)
+        option(value="") Select food type 
+        option(value="Appetizer") Appetizer 
+        option(value="Main dish") Main dish 
+        option(value="Dessert") Dessert 
+        option(value="Frozen food") Frozen food 
+        option(value="others") others 
+br
+label(for="ingredients") Ingredients: 
+textarea.form-control(name="ingredients", cols="30", rows="10") 
+br
+label(for="procedure") Procedure: 
+textarea.form-control(name="ingredients", cols="30", rows="10") 
+br
+button#add-btn.form-control(type="submit" ) Add recipe
+</main>
+</body>
+</html>
