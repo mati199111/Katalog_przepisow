@@ -1,4 +1,5 @@
 body {
+    background-color: aquamarine;
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -39,4 +40,74 @@ label {
 textarea {
     resize: none;
     font-size: larger;
+}
+
+#add-recipe-btn {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: #00B7FF;
+    color: #f1f1f1;
+    font-size: 17px;
+    border: 1px solid grey;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 65%;
+    background: #f1f1f1;
+}
+
+#search-btn {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: #00B7FF;
+    color: #f1f1f1;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#search-btn:hover,
+#add-recipe-btn:hover,
+#add-btn:hover,
+#Home-btn:hover {
+    background-color: green;
+    color: red;
+}
+
+#query-result {
+    list-style: square;
+}
+
+#query-result-anchor {
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#query-result-anchor:hover {
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#Home-btn {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: #00B7FF;
+    color: #f1f1f1;
+    font-size: 17px;
+    border: 1px solid grey;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.4s;
 }

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+a#home-btn(href='/') Home 
+br
+br
+
+h1 #{recipe.title}
+table.table-data 
+tr 
+th#table-data Food type: 
+td#table-data #{recipe.type}
+tr 
+th#table-data Ingredients: 
+td#table-data #{recipe.Ingredients}
+tr 
+th#table-data Procedure: 
+td#table-data #{recipe.Procedure}

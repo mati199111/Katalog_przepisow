@@ -1,5 +1,18 @@
-extends layout
-
-block content
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block content
   h1= title
   p Welcome to #{title}
+
+  a#add-recipe-btn(href='/recipe/new') Add recipe
+
+form(action="/query", method="get")
+  input#search-bar(type="text", placeholder="Search recipe", name="search")
+  button#search-btn(type="submit") Search
+
+
+  
+  
+  

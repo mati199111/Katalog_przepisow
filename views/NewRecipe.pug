@@ -6,6 +6,12 @@ html
 body    
 <main>
 h1  Enter new #{ title } to database 
+<br>
+  a#Home-btn(href='../') Home
+  <br>
+  <br>
+  <br>
+  
 form(action="/recipe/new", method="post")
 
     label(for="title") Recipe name: 
@@ -27,7 +33,7 @@ br
 label(for="procedure") Procedure: 
 textarea.form-control(name="ingredients", cols="30", rows="10") 
 br
-button#add-btn.form-control(type="submit" ) Add recipe
+button#add-btn(type="submit" ) Add recipe
 </main>
 </body>
 </html>
