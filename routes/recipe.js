@@ -22,7 +22,7 @@ router.post('/new', (req, res, next) => {
         res.send('Error: Type should not be left unchosen')
     } else {
         let recipe = new a.Recipe({
-            _id: new mongoose.types.objectId(),
+            _id: new mongoose.types.ObjectId(),
             title: req.body.title,
             type: req.body.type,
             ingredients: req.body.ingredients,
