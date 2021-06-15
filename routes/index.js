@@ -7,7 +7,7 @@ const a = require('../models/recipe-api')
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', {
-        title: 'Recipe',
+        title: 'Recipe Book',
         isIndex: true
     });
 });
